@@ -12,56 +12,124 @@
 
 </head>
 
-<body>
+<body class="body">
     
-    <header><h1>HTML</h1></header>
-
-    <nav class="nav-top">
+    <header class="grid-area__top"><h1>Welcome</h1></header>
+    <nav class="grid-area__top2">
         <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="html_css.html">HTML y CSS</a></li>
-            <li><a href="">C</a></li>
+            <li><a href="">CCCC</a></li>
         </ul>
     </nav>
 
-    <nav class="nav-left">
+    <nav class="grid-area__left">
         <ul>
-            <li><a href="">Etiquetas</a></li>
-            <li><a href="">HTML</a></li>
-            <li><a href="">C</a></li>
+            <li><a href="">Contenedores</a></li>
+            <li><a href="">Flex</a></li>
+            <li><a href="">Inputs</a></li>
+            <li><a href="">Sombras</a></li>
+            <li><a href="">Gradientes</a></li>
+            <li><a href="">Filtros</a></li>
+            <li><a href="">Transformaciones 2D</a></li>
+            <li><a href="">Transformaciones 3D</a></li>
+            <li><a href="">Animaciones</a></li>
+            <li><a href="">Transiciones</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section>
-            <div class="box box-float-left">Hello</div>
-            <div class="box box-float-left">Hello</div>
-            <div class="box box-float-right">Hello</div>
-            <div class="box box-float-right">Hello</div>
-        </section>
+    <nav class="grid-area__right">
+        <ul>
+            <li><a href="">AAAA</a></li>
+            <li><a href="">BBB</a></li>
+            <li><a href="">CCC</a></li>
+        </ul>
+    </nav>
 
+    <main class="grid-area__main">
         <section>
-            <div class="box-02">
-                <div class="box-header"><img src="../img/10838001_19333449.jpg" alt=""></div>
-                <div class="box-test box-ta">absolute</div>
-                <div class="box-test box-tf">fixed</div>
-                <div class="box-test box-tr">relative</div>
+            <div>float</div>
+            <div class="test-box inline-block">
+                <p>Float left</p>
+                <div class="example float-left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="test-box inline-block">
+                <p>Float right</p>
+                <div class="example float-right">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div>flex</div>
+            <div class="test-box inline-block">
+                <p>start</p>
+                <div class="example test-flex justify-content__start">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="test-box inline-block">
+                <p>end</p>
+                <div class="example test-flex justify-content__end">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="test-box inline-block">
+                <p>center</p>
+                <div class="example test-flex justify-content__center">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="test-box inline-block">
+                <p>around</p>
+                <div class="example test-flex justify-content__space-around">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="test-box inline-block">
+                <p>between</p>
+                <div class="example test-flex justify-content__space-between">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="test-box inline-block">
+                <p>evenly</p>
+                <div class="example test-flex justify-content__space-evenly">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div class="columnas">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </div>
-        </section>
     </main>
     
     <aside></aside>
 
-    <footer></footer>
+    <footer class="grid-area__bottom"></footer>
 
     <script src="js/app.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>

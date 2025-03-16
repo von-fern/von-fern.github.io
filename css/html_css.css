@@ -1,98 +1,71 @@
 /* cajas */
 
-.box{
-  width: 170px;
-  height: 40px;
-  background: var(--gray);
-  border: solid 1px;
-  text-align: center;
+main section{
+  width: 100%;
+  height: 200px;
 }
 
-.box-float-left{
+.test-box{
+  width: 100px;
+  height: 50px;
+  border: solid 1px var(--red);
+  background: var(--green);
+}
+
+.test-box div{
+  width: 100px;
+  height: 30px;
+  background: var(--gray);
+  border: solid 1px;
+}
+
+.example div{
+  width: 20px;
+  height: 20px;
+  background: var(--green);
+  border: solid 1px var(--red);
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.float-left div{
   float: left;
 }
 
-.box-float-right{
-  float: right;
+.float-right div{
+  float:right;
 }
 
-.box-02{
-  width:40%;
-  height: 200px;
-  background: var(--gray);
-  margin: auto;
+.test-flex{
+  display: flex;
 }
 
-.box-02:hover .box-ta{
-  opacity: 1;
+.test-flex div{
+  display: flex;
 }
 
-.box-02:hover .box-tf{
-  opacity: 1;
+.justify-content__start{
+  justify-content: start;
 }
 
-.box-02:hover .box-tr{
-  opacity: 1;
+.justify-content__end{
+  justify-content: end;
 }
 
-.box-02 div{
-  background: var(--blue);
-  padding: 4px;
-  border: solid 2px;
-  margin: auto;
-  overflow: hidden;
-  text-align: center;
-}
-.box-header{
-  width: 208px;
-  height: 1000px;
+.justify-content__center{
+  justify-content: center;
 }
 
-.box-header img{
-  height: 100px;
+.justify-content__space-around{
+  justify-content: space-around;
 }
 
-.box-test{
-  width: 100px;
-  height: 30px;
-  opacity: 0;
+.justify-content__space-between{
+  justify-content: space-between;
 }
 
-.box-ta{
-  position: absolute;
-  top:40px;
-  left:40px;
-  transition: opacity 0.4s;
-}
-
-.box-tf{
-  position: fixed;
-  top:40px;
-  left:160px;
-  transition: opacity 0.4s;
-}
-
-.box-tr{
-  position: relative;
-  top:60px;
-  left:-50%;
-  transition: opacity 0.4s;
-}
-
-.columnas{
-  columns: 4 20px;
-  column-rule-style:dotted ;
-}
-
-/*
-column-count: ;
-column-width: ;
-column-span: ;
-column-gap: ;
-column-rule-color: ; 
-*/
-
-.columnas div{
-  text-align: center;
-  border: solid
+.justify-content__space-evenly{
+  justify-content: space-evenly;
 }
