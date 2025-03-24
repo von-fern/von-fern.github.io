@@ -54,6 +54,7 @@ footer, footer *, .grid-area__top2 *{
 .grid-area__left, .grid-area__left *,
 .grid-area__right, .grid-area__right *{
     background: var(--brown);
+    display: block;
     overflow: hidden;
 }
 
@@ -71,10 +72,5 @@ footer{
     grid-row: 2;
 }
 
-.float-left{
-    float: left;
-}
-
-.float-right{
-    float: right;
-}
+.float-left{float: left;}
+.float-right{float: right;}
