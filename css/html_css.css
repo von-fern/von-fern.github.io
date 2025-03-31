@@ -1,5 +1,4 @@
 /* cajas */
-
 main section{
   width: 100%;
   min-height: 120px;
@@ -7,13 +6,27 @@ main section{
 
 .test-box{
   width: 100px;
-  height: 50px;
+  height: 40px;
+  margin: 5px;
   border: solid 1px var(--red);
   background: var(--green);
 }
 
+.test-box-02{
+  width: 200px;
+  height: 260px;
+  border: solid 1px var(--red);
+  background: var(--green);
+  overflow: hidden;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  background-image: url(../img/20231014_112316.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .test-box div{
-  width: 100px;
+  width: 100%;
   height: 30px;
   background: var(--gray);
   border: solid 1px;
@@ -46,6 +59,8 @@ main section{
 .align-items__center{align-items: center;}
 .align-items__stretch div{background: var(--green);  width: 20px;}
 
+/* BORDES */
+
 .bs__dotted{  border-style: dotted; border-width: thick; background: var(--gray);}
 .bs__dashed{  border-style: dashed; background: var(--gray);}
 .bs__solid{   border: 5px solid var(--red); background: var(--gray);}
@@ -58,13 +73,26 @@ main section{
 .bs__hidden{  border: hidden;}
 .bs__mix{     border: 5px var(--red); border-style: dotted solid dashed double; background: var(--gray);}
 
+/* FILTROS */
+
 .filter__drop-shadow{ filter:drop-shadow(10px 10px 4px var(--gray));}
 .filter__blur{        filter:blur(2px);}
 .filter__grayscale{   filter:grayscale(.8);}
 .filter__sepia{       filter:sepia(1);}
-.filter__brightness{  filter:brightness(2);}
-.filter__contrast{    filter:contrast(4);}
+.filter__brightness{  filter:brightness(1.5);}
+.filter__contrast{    filter:contrast(3);}
 .filter__hue-rotate{  filter:hue-rotate(150deg);}
 .filter__invert{      filter:invert(1);}
 .filter__saturate{    filter:saturate(2);}
 .filter__opacity{     filter:opacity(.5);}
+
+/* TRANSFORMACIONES */
+
+.t2d__scale{    transform: scale(0.8,0.8);}
+.t2d__rotate{   transform: rotate(20deg);}
+.t2d__skew{     transform: skew(20deg);}
+.t2d__translate{transform: translate(100px,0px);}
+
+.t3d__scale{     transform: scale3d(0.8,0.8,0.8);}
+.t3d__translate{ transform: translate3d(400px,20px,20px);}
+.t3d__rotate{    transform: rotateX(-10deg) rotateY(-20deg) rotateZ(-10deg);}

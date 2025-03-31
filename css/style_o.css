@@ -1,59 +1,4 @@
-:root {
-    --green:#00FF00;
-    --white:#ffffff;
-    --black:#000000;
-    --blue:#0000ff;
-    --gray:#808080;
-    --cyan:#00FFFF;
-    --brown:#804000;
-    --red:#ff0000;
-  }
-
-* { /* Estilo general */
-  color: var(--fontColor); /* Fuente */
-  font-family: helvetica;
-  margin:0%;
-  padding: 0%;
-}
-
-header p{
-  color: var(--white);
-}
-
-body {
-  background: var(--bg);
-  font-family: monospace;
-}
-
-body > aside{
-  background-color: var(--red);
-}
-
-input{
-  background: var(--bg);
-  font-family: monospace;
-  border:solid 2px;
-}
-
-select{
-  background: var(--bg);
-  font-family: monospace;
-  border:solid 2px;
-}
-
-textarea{
-  background: var(--bg);
-  font-family: monospace;
-  border:solid 2px;
-}
-
 /* Estilos css - Texto general.html */
-
-.test-parrafo{
-  background: var(--white);
-  color: var(--blue);
-}
-
 .cyan{color: var(--cyan);}
 
 .font-family-tnr{font-family:'Times New Roman', Times, serif;}
@@ -82,8 +27,6 @@ textarea{
 .text-decoration-underline{text-decoration: underline;}
 .text-decoration-overline{text-decoration:overline;}
 .text-decoration-line-through{text-decoration:line-through;}
-
-
 
 /* Contenedores css.html */
 
@@ -158,49 +101,6 @@ textarea{
   background-origin: border-box;
 }
 
-/* Bordes ;*/
-
-.css-bordes-01{
-  width:500px;
-  height:200px;
-  /*border-width: 2px;
-  border-style: dashed;
-  border-color: blue;*/
-  border: dashed 2px var(--white);
-  background: var(--gray);
-  border-radius:10px 20px 30px 40px;
-}
-
-.css-bordes-02{
-  width:500px;
-  height:200px;
-  border: dashed 5px var(--brown);
-  outline-width: 5px;
-  outline-style: dashed;
-  outline-color: var(--blue);
-  outline-offset:10px;
-}
-
-.css-bordes-03{
-  width:500px;
-  height:200px;
-  border-image-source: url(../IMG/python_18894.png);
-  border-image-width:20px;
-  border-image-repeat:repeat;
-}
-
-.b-punteado{border-style: dotted; border-width: thick;}
-.b-discontinuo{border-style: dashed}
-.b-solido{border: 5px solid var(--red);}
-.b-doble{border: 5px double var(--red);}
-.b-surco{border: 5px groove var(--red);}
-.b-cresta{border: 5px ridge var(--red);}
-.b-recuadro{border: 5px inset var(--red);}
-.b-outset{border: 5px outset var(--red);}
-.b-sinborde{border: none;}
-.b-oculto{border: hidden;}
-.b-mixto{border-style: dotted solid dashed double;}
-
 /* Sombras ;*/
 
 .css-sombras-01{
@@ -245,75 +145,6 @@ textarea{
   margin:auto;
   background-image: -webkit-linear-gradient(45deg, var(--black), var(--white), var(--blue));  
 }
-
-/* Filtros ;*/
-
-.css-filtros{
-  width: 100%;
-  height:800px;
-  border:dotted 4px var(--cyan);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.css-filtros div{
-  width: 20%;
-  height:200px;
-  border:dotted 4px var(--cyan);
-  background-image: url(../IMG/way.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
- 
-.css-filtros-01{filter:drop-shadow(10px 10px 4px var(--gray));}
-.css-filtros-02{filter:blur(2px);}
-.css-filtros-03{filter:grayscale(.8);}
-.css-filtros-04{filter:sepia(1);}
-.css-filtros-05{filter:brightness(2);}
-.css-filtros-06{filter:contrast(4);}
-.css-filtros-07{filter:hue-rotate(150deg);}
-.css-filtros-08{filter:invert(1);}
-.css-filtros-09{filter:saturate(2);}
-.css-filtros-10{filter:opacity(.5);}
-
-/* Transformaciones 2D */
-
-.css-transformaciones-2d div{
-  width: 500px;
-  height:200px;
-  margin:auto;
-  border:dotted 4px var(--cyan);
-  background-image: url(../IMG/way.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;  
-}
-
-.css-t2d-02{transform: scale(0.8,0.8);}
-.css-t2d-03{transform: rotate(20deg);}
-.css-t2d-04{transform: skew(20deg);}
-.css-t2d-05{transform: translate(100px,20px);}
-
-
-/* Transformaciones 3D */
-
-.css-transformaciones-3d div{
-  width: 500px;
-  height:200px;
-  margin:auto;
-  border:dotted 4px var(--cyan);
-  background-image: url(../IMG/way.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform-style: preserve-3d;
-  perspective: 500px;
-} 
-
-.css-t3d-01{transform: scale3d(0.8,0.8,0.8);}
-.css-t3d-02{transform: rotate3d(20deg,20deg,20deg);}
-.css-t3d-03{transform: translate3d(20px,20px,20px);}
 
 /* Animaciones */
 
@@ -452,18 +283,6 @@ transition: all 1s;
   to{background-position: 80px;}
 }
 
-ul {
-  font-family: helvetica;
-}
-
-.listCircle {
-  list-style: circle;
-  }
-  
-.list{
-  list-style: square;
-}
-
 .btn{
   position: absolute;
   top: 20px;
@@ -477,14 +296,6 @@ ul {
 }
 
 .btn:focus{ outline-style: none; }
-
-.modulos{
-  color: var(--red);
-}
-
-.inversores{
-  color: blue;
-}
 
 .listados{
   background:#90abc9;
