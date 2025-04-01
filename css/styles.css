@@ -25,7 +25,6 @@ body.body{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr auto;
     min-height: 100vh;
     grid:
         "top top top" auto
@@ -51,6 +50,10 @@ footer, footer *, .grid-area__top2 *{
     overflow: hidden;
 }
 
+.grid-area__left{
+    height: 90vh;
+}
+
 .grid-area__left, .grid-area__left *,
 .grid-area__right, .grid-area__right *{
     background: var(--brown);
@@ -68,9 +71,11 @@ main{
     width: 100%;
 }
 
-footer{
-    grid-row: 2;
-}
+
+.position__static{  position: static;}
+.position__absolute{position: absolute;}
+.position__relative{position: relative;}
+.position__sticky{  position: sticky; top: 40px;}
 
 .float-left{float: left;}
 .float-right{float: right;}

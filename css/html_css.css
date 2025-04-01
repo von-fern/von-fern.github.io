@@ -39,9 +39,10 @@ main section{
   border: solid 1px var(--red);
 }
 
-.inline-block{  display: inline-block;}
-.test-flex{     display: flex;}
-.test-flex div{ display: flex;}
+.display__block{          display: block;}
+.display__inline-block{   display: inline-block;}
+.display__flex{           display: flex;}
+.display__flex div{       display: flex;}
 
 .float-left div{float: left;}
 .float-right div{float:right;}
@@ -58,6 +59,8 @@ main section{
 .align-items__flex-start{align-items: flex-start;}
 .align-items__center{align-items: center;}
 .align-items__stretch div{background: var(--green);  width: 20px;}
+
+.inputs input{display: block;}
 
 /* BORDES */
 
@@ -96,3 +99,29 @@ main section{
 .t3d__scale{     transform: scale3d(0.8,0.8,0.8);}
 .t3d__translate{ transform: translate3d(400px,20px,20px);}
 .t3d__rotate{    transform: rotateX(-10deg) rotateY(-20deg) rotateZ(-10deg);}
+
+/* SpriteSheets */
+/* Inicio: 550 ; Espacios: 580 Lado:290 Botella:750 ; 1330*/
+/* https://www.freepik.es/vector-gratis/botella-pocion-laboratorio-quimico-animacion-aplicaciones-juegos-frasco-alquimista-elixir-fluido-o-antidoto-hoja-sprites-vacia-llenada-conjunto-activos-ilustracion-alquimia-fantasia-interfaz-rol-mago_66410853.htm#fromView=search&page=1&position=3&uuid=050a563b-4693-4246-82ab-abc6206b1888&query=spritesheet */
+
+.spritesheet div{
+  width: 133px;
+  height: 280px;
+  margin: auto;
+  border:dotted 4px var(--cyan);
+  background-image: url("../img/2308.w026.n002.3685B.p1.3685.jpg");
+  background-size: 700px 280px;
+  background-repeat: no-repeat;
+  background-image: center;
+  overflow: hidden;
+}
+
+.spritesheet__flame{
+  animation: flame 1s steps(5) infinite;
+}
+
+@keyframes flame{
+  from{background-position: -26px;}
+  to{background-position: -691px;}
+}
+
