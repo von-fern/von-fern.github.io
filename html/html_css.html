@@ -25,16 +25,16 @@
 
     <nav class="grid-area__left position__sticky">
         <ul>
-            <li><a href="">Contenedores</a></li>
-            <li><a href="">Flex</a></li>
-            <li><a href="">Inputs</a></li>
-            <li><a href="">Sombras</a></li>
-            <li><a href="">Gradientes</a></li>
-            <li><a href="">Filtros</a></li>
-            <li><a href="">Transformaciones 2D</a></li>
-            <li><a href="">Transformaciones 3D</a></li>
-            <li><a href="">Animaciones</a></li>
-            <li><a href="">Transiciones</a></li>
+            <li><a href="#float">Float</a></li>
+            <li><a href="#flex">Flex</a></li>
+            <li><a href="#inputs">Inputs</a></li>
+            <li><a href="#borders">Bordes</a></li>
+            <li><a href="#shadows">Sombras</a></li>
+            <li><a href="#gradients">Gradientes</a></li>
+            <li><a href="#filters">Filtros</a></li>
+            <li><a href="#2dtransformations">Transformaciones 2D</a></li>
+            <li><a href="#3dtransformations">Transformaciones 3D</a></li>
+            <li><a href="#spritesheet">Spritesheet</a></li>
         </ul>
     </nav>
 
@@ -47,7 +47,7 @@
     </nav>
 
     <main class="grid-area__main">
-        <section>
+        <section id="float">
             <div>float</div>
             <div class="test-box display__inline-block">
                 <p>Float left</p>
@@ -68,7 +68,7 @@
             </div>
         </section>
     
-        <section>
+        <section id="flex">
             <div>flex</div>
             <div class="test-box display__inline-block">
                 <p>start</p>
@@ -155,32 +155,32 @@
             </div>            
         </section>
 
-        <section>
+        <section id="inputs">
             <div>Inputs</div>
             <div class="inputs">
                 <input type="button" name="button" value="Button"/>
-                <input type="checkbox" name="checkbox" value="checkbox"/>
-                <input type="color" name="color" value="color"/>
-                <input type="date" name="date" value="date"/>
-                <input type="datetime-local" name="datetime-local" value="datetime-local"/>
-                <input type="email" name="email" value="email"/>
-                <input type="file" name="file" value="file"/>
-                <input type="image" name="" value=""/>
-                <input type="number" name="" value=""/>
-                <input type="password" name="" value=""/>
-                <input type="radio" name="" value=""/>
-                <input type="range" name="" value=""/>
-                <input type="reset" name="" value=""/>
-                <input type="search" name="" value=""/>
-                <input type="submit" name="" value=""/>
-                <input type="tel" name="" value=""/>
-                <input type="text" name="" value=""/>
-                <input type="time" name="" value=""/>
-                <input type="url" name="" value=""/>
+                <input type="checkbox" name="checkbox"/>
+                <input type="color" name="color"/>
+                <input type="date" name="date"/>
+                <input type="datetime-local" name="datetime-local"/>
+                <input type="email" name="email"/>
+                <input type="file" name="file" accept="image/*, text/*"/>
+                <input type="image" name="image" src="image" alt="image input"/>
+                <input type="number" name="number"/>
+                <input type="password" name="password"/>
+                <input type="radio" name="radio"/>
+                <input type="range" name="range" min="0" max="100"/>
+                <input type="reset" name="reset"/>
+                <input type="search" name="search"/>
+                <input type="submit" name="submit"/>
+                <input type="tel" name="tel"/>
+                <input type="text" name="text"/>
+                <input type="time" name="time"/>
+                <input type="url" name="url"/>
             </div>
         </section>
 
-        <section>
+        <section id="borders">
             <div>Borders</div>
             <div class="test-box display__inline-block bs__dotted">
                 <p>Dotted</p>
@@ -219,7 +219,7 @@
 
 
 
-        <section>
+        <section id="filters">
             <div>Filters</div>
             <div class="test-box-02 display__inline-block filter__drop-shadow">
                 <p>Drop-shadow</p>
@@ -253,7 +253,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="2dtransformations">
             <div>Transformaciones 2D</div>
             <div class="test-box-02 display__inline-block t2d__scale">
                 <p>Scale</p>
@@ -269,7 +269,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="3dtransformations">
             <div>Transformaciones 3D</div>
             <div class="test-box-02 display__inline-block t3d__scale">
                 <p>Scale</p>
@@ -282,7 +282,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="spritesheet">
             <div>Spritesheet</div>
             <div class="spritesheet">
                 <div class="spritesheet__flame"></div>

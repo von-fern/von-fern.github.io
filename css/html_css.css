@@ -60,7 +60,11 @@ main section{
 .align-items__center{align-items: center;}
 .align-items__stretch div{background: var(--green);  width: 20px;}
 
-.inputs input{display: block;}
+/* Inputs */
+
+.inputs input{display: block; margin: auto;}
+.inputs{text-align: center;}
+
 
 /* BORDES */
 

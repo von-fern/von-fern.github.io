@@ -51,7 +51,7 @@ footer, footer *, .grid-area__top2 *{
 }
 
 .grid-area__left{
-    height: 90vh;
+    height: 85vh;
 }
 
 .grid-area__left, .grid-area__left *,
@@ -70,7 +70,6 @@ footer ul *:hover, .grid-area__left ul *:hover,
 main{
     width: 100%;
 }
-
 
 .position__static{  position: static;}
 .position__absolute{position: absolute;}
