@@ -12,7 +12,7 @@ main section{
   background: var(--green);
 }
 
-.test-box-02{
+.img-box{
   width: 200px;
   height: 260px;
   border: solid 1px var(--red);
@@ -79,6 +79,23 @@ main section{
 .bs__none{    border: none;}
 .bs__hidden{  border: hidden;}
 .bs__mix{     border: 5px var(--red); border-style: dotted solid dashed double; background: var(--gray);}
+
+/* SHADOWS */
+
+.box-shadow{box-shadow: var(--gray) 10px -10px 3px 2px;}
+.box-shadow__inset{box-shadow: var(--gray) 10px 10px 3px 2px inset;}
+.text-shadow{text-shadow: var(--blue) 2px 2px 2px}
+
+/* GRADIENTES */
+
+.linear-gradient__simple{ background-image: none; background:  linear-gradient(blue, pink);}
+.linear-gradient__to-right{ background-image: none; background: linear-gradient(to right, blue, pink);}
+.linear-gradient__diagonal{ background-image: none; background: linear-gradient(to bottom right, blue, pink);}
+.linear-gradient__angled{ background-image: none; background: linear-gradient(60deg, blue, pink);}
+.linear-gradient__colors{ background-image: none; background: linear-gradient(red, orange, yellow, brown, green, blue);}
+.linear-gradient__v-colors{ background-image: none; background: linear-gradient(to left, lime 28px, red 77%, cyan);}
+.linear-gradient__stripped{ background-image: none; background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%)}
+
 
 /* FILTROS */
 
