@@ -47,20 +47,53 @@
     </nav>
 
     <main class="grid-area__main">
+        <section>
+            <div>Referencias</div>
+            <div class="padre">
+                <h1>h1</h1>
+                <h2>h2 h1+h2</h2>
+                <h2>h2</h2>
+                    <div>div > div</div>
+                    <div>div > div
+                        <h1>h1</h1>
+                        <div>div</div>
+                    </div>
+                    <div>div > div</div>
+                <h2>h2</h2>
+                <h3>h3 h2~h3</h3>
+                <h3>h3 h2~h3</h3>
+                <h3>h3 h2~h3</h3>
+                <h3>h3 h2~h3</h3>
+
+            </div>
+        </section>
+
         <section id="float">
             <div>float</div>
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>Float left</p>
-                <div class="example float-left">
+                <div class="test-box float-left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
 
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>Float right</p>
-                <div class="example float-right">
+                <div class="test-box float-right">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -69,55 +102,56 @@
         </section>
     
         <section id="flex">
-            <div>flex</div>
-            <div class="test-box display__inline-block">
+            <div>Justify</div>
+            <div class="box display__inline-block">
                 <p>start</p>
-                <div class="example display__flex justify-content__start">
+                <div class="test-box display__flex justify-content__start">
                     <div></div>
                     <div></div>
                     <div></div>
+                    
                 </div>
             </div>
 
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>end</p>
-                <div class="example display__flex justify-content__end">
+                <div class="test-box display__flex justify-content__end">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
 
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>center</p>
-                <div class="example display__flex justify-content__center">
+                <div class="test-box display__flex justify-content__center">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
 
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>around</p>
-                <div class="example display__flex justify-content__space-around">
+                <div class="test-box display__flex justify-content__space-around">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
 
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>between</p>
-                <div class="example display__flex justify-content__space-between">
+                <div class="test-box display__flex justify-content__space-between">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
 
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>evenly</p>
-                <div class="example display__flex justify-content__space-evenly">
+                <div class="test-box display__flex justify-content__space-evenly">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -126,106 +160,211 @@
         </section>
 
         <section>
-            <div>flex - align</div>
-            <div class="test-box display__inline-block">
-                <p>stretch</p>
-                <div class="display__flex align-items__stretch">
+            <div>Align Items</div>
+            <div class="box display__inline-block">
+                <p>flex-start</p>
+                <div class="test-box display__flex align-items__flex-start">
+                    <div style="height: 40px; width: 10px;"></div>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
 
-            <div class="test-box display__inline-block">
-                <p>flexs-start</p>
-                <div class="example display__flex align-items__flex-start">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-            <div class="test-box display__inline-block">
+            <div class="box display__inline-block">
                 <p>center</p>
-                <div class="example display__flex align-items__center">
+                <div class="test-box display__flex align-items__center">
+                    <div style="height: 40px; width: 10px;"></div>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-            </div>            
+            </div>
+
+            <div class="box display__inline-block">
+                <p>flex-end</p>
+                <div class="test-box display__flex align-items__flex-end">
+                    <div style="height: 40px; width: 10px;"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>Align content</div>
+            <div class="box display__inline-block">
+                <p>flex-start</p>
+                <div class="test-box display__flex align-content align-content__flex-start">
+                    <div>1</br>2</div>
+                    <div>Hello</div>
+                    <div>Hi</div>
+                    <div>Hola</div>
+                </div>
+            </div>
+
+            <div class="box display__inline-block">
+                <p>center</p>
+                <div class="test-box display__flex align-content align-content__center">
+                    <div>Hello</div>
+                    <div>1</br>2</div>
+                    <div>Hi</div>
+                    <div">Hola</div>
+                </div>
+            </div>
+
+            <div class="box display__inline-block">
+                <p>flex-end</p>
+                <div class="test-box display__flex align-content align-content align-content__flex-end">
+                    <div>Hello</div>
+                    <div>Hi</div>
+                    <div>Hola</div>
+                    <div>1</br>2</div>
+                </div>
+            </div>
+
+            <div class="box display__inline-block">
+                <p>S. Around</p>
+                <div class="test-box display__flex align-content align-content align-content__saround">
+                    <div>Hello</div>
+                    <div>Hi</div>
+                    <div>1</br>2</div>
+                    <div>Hola</div>
+                </div>
+            </div>
+
+            <div class="box display__inline-block">
+                <p>S. Between</p>
+                <div class="test-box display__flex align-content align-content align-content__sbetween">
+                    <div>Hello</div>
+                    <div>Hi</div>
+                    <div>Hola</div>
+                    <div>1</br>2</div>
+                </div>
+            </div>
+
+            <div class="box display__inline-block">
+                <p>S. Evenly</p>
+                <div class="test-box display__flex align-content align-content align-content__sevenly">
+                    <div>Hello</div>
+                    <div>Hi</div>
+                    <div>1</br>2</div>
+                    <div>Hola</div>
+                </div>
+            </div>
         </section>
 
         <section id="inputs">
             <div>Inputs</div>
             <div class="inputs">
-                <input type="button" name="button" value="Button"/>
-                <input type="checkbox" name="checkbox"/>
-                <input type="color" name="color"/>
-                <input type="date" name="date"/>
-                <input type="datetime-local" name="datetime-local"/>
-                <input type="email" name="email"/>
-                <input type="file" name="file" accept="image/*, text/*"/>
-                <input type="image" name="image" src="image" alt="image input"/>
-                <input type="number" name="number"/>
-                <input type="password" name="password"/>
-                <input type="radio" name="radio"/>
-                <input type="range" name="range" min="0" max="100"/>
-                <input type="reset" name="reset"/>
-                <input type="search" name="search"/>
-                <input type="submit" name="submit"/>
-                <input type="tel" name="tel"/>
-                <input type="text" name="text"/>
-                <input type="time" name="time"/>
-                <input type="url" name="url"/>
+                <div>
+                    <p>button</p>
+                    <input type="button" name="button" value="Button"/></div>
+                <div>
+                    <p>checkbox</p>
+                    <input type="checkbox" name="checkbox"/></div>
+                <div>
+                    <p>radio</p>
+                    <input type="radio" name="radio"/></div>
+                <div>
+                    <p>range</p>
+                    <input type="range" name="range" min="0" max="100"/></div>
+                <div>
+                    <p>reset</p>
+                    <input type="reset" name="reset"/></div>
+                <div>
+                    <p>color</p>
+                    <input type="color" name="color"/></div>
+                <div>
+                    <p>submit</p>
+                    <input type="submit" name="submit"/></div>
+
+                <div>
+                    <p>date</p>
+                    <input type="date" name="date"/></div>
+                <div>
+                    <p>datetime-local</p>
+                    <input type="datetime-local" name="datetime-local"/></div>
+                <div>
+                    <p>search</p>
+                    <input type="search" name="search"/></div>
+                <div>
+                    <p>file</p>
+                    <input type="file" name="file" accept="image/*, text/*"/></div>
+                <div>
+                    <p>image</p>
+                    <input type="image" name="image" src="image" alt="image input"/></div>
+                <div>
+                    <p>tel</p>
+                    <input type="tel" name="tel"/></div>
+                <div>
+                    <p>text</p>
+                    <input type="text" name="text"/></div>
+                <div>
+                    <p>time</p>
+                    <input type="time" name="time"/></div>
+                <div>
+                    <p>url</p>
+                    <input type="url" name="url"/></div>                
+                <div>
+                    <p>number</p>
+                    <input type="number" name="number"/></div>
+                <div>
+                    <p>email</p>
+                    <input type="email" name="email"/></div>
+                <div>
+                    <p>password</p>
+                    <input type="password" name="password"/></div>
             </div>
         </section>
 
         <section id="borders">
             <div>Borders</div>
-            <div class="test-box display__inline-block bs__dotted">
+            <div class="box display__inline-block bs__dotted">
                 <p>Dotted</p>
             </div>
-            <div class="test-box display__inline-block bs__dashed">
+            <div class="box display__inline-block bs__dashed">
                 <p>Dashed</p>
             </div>
-            <div class="test-box display__inline-block bs__solid">
+            <div class="box display__inline-block bs__solid">
                 <p>Solid</p>
             </div>
-            <div class="test-box display__inline-block bs__double">
+            <div class="box display__inline-block bs__double">
                 <p>Double</p>
             </div>
-            <div class="test-box display__inline-block bs__groove">
+            <div class="box display__inline-block bs__groove">
                 <p>Groove</p>
             </div>
-            <div class="test-box display__inline-block bs__ridge">
+            <div class="box display__inline-block bs__ridge">
                 <p>Ridge</p>
             </div>
-            <div class="test-box display__inline-block bs__inset">
+            <div class="box display__inline-block bs__inset">
                 <p>Inset</p>
             </div>
-            <div class="test-box display__inline-block bs__outset">
+            <div class="box display__inline-block bs__outset">
                 <p>Outset</p>
             </div>
-            <div class="test-box display__inline-block bs__none">
+            <div class="box display__inline-block bs__none">
                 <p>none</p>
             </div>
-            <div class="test-box display__inline-block bs__hidden">
+            <div class="box display__inline-block bs__hidden">
                 <p>hidden</p>
             </div>
-            <div class="test-box display__inline-block bs__mix">
+            <div class="box display__inline-block bs__mix">
                 <p>Mix</p>
             </div>
         </section>
 
         <section id="shadows">
             <div>Shadows</div>
-            <div class="test-box display__inline-block box-shadow">
+            <div class="box display__inline-block box-shadow">
                 <p>Box Shadow</p>
             </div>
-            <div class="test-box display__inline-block box-shadow__inset">
+            <div class="box display__inline-block box-shadow__inset">
                 <p>BS inset</p>
             </div>
-            <div class="test-box display__inline-block text-shadow">
+            <div class="box display__inline-block text-shadow">
                 <p>Text Shadow</p>
             </div>
         </section>
@@ -233,34 +372,25 @@
         <section id="gradients">
             <div>Gradientes</div>
             <div class="img-box display__inline-block linear-gradient__simple">
-                <p>Drop-shadow</p>
+                <p>simple</p>
             </div>
             <div class="img-box display__inline-block linear-gradient__to-right">
-                <p>Blur</p>
+                <p>to-right</p>
             </div>
             <div class="img-box display__inline-block linear-gradient__diagonal ">
-                <p>Grayscale</p>
+                <p>diagonal</p>
             </div>
             <div class="img-box display__inline-block linear-gradient__angled">
-                <p>Sepia</p>
+                <p>angled</p>
             </div>
             <div class="img-box display__inline-block linear-gradient__colors">
-                <p>Brightness</p>
+                <p>colors</p>
             </div>
             <div class="img-box display__inline-block linear-gradient__v-colors">
-                <p>Contrast</p>
+                <p>v-colors</p>
             </div>
             <div class="img-box display__inline-block linear-gradient__stripped">
-                <p>Hue-rotate</p>
-            </div>
-            <div class="img-box display__inline-block ">
-                <p>Invert</p>
-            </div>
-            <div class="img-box display__inline-block ">
-                <p>Saturate</p>
-            </div>
-            <div class="img-box display__inline-block ">
-                <p>Opacity</p>
+                <p>stripped</p>
             </div>
         </section>
 
