@@ -19,6 +19,23 @@ section{
   border: solid 1px var(--red);
 }
 
+nav ul{
+  height: 100%;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav a{
+  padding: 5px;
+}
+
+nav a:hover{
+  background: var(--blue);
+  cursor: pointer;
+}
+
 .test-box{
   width: 98px;
   height: 100px;
@@ -45,6 +62,12 @@ section{
   background-size: cover;
   background-position: center;
 }
+
+
+
+.text-align__center li{text-align: center;}
+.text-align__justify{text-align:justify;}
+
 
 /* Referencias */
 .padre > h1{background: var(--gray);}

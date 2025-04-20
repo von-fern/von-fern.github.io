@@ -42,11 +42,20 @@ body.body{
 .grid-area__right{  grid-area: right;}
 .grid-area__bottom{ grid-area: bottom;}
 
-header, header *, .grid-area__top2,
-footer, footer *, .grid-area__top2 *{
+.grid-area__top2{
+    height:45px;
+    background: var(--black);
+    overflow: hidden;
+}
+
+.grid-area__top2 div{
+    height: 100%;
+}
+
+header, header *,
+footer, footer *{
     height:45px;
     background: var(--brown);
-    display: inline-block;
     overflow: hidden;
 }
 
@@ -59,12 +68,6 @@ footer, footer *, .grid-area__top2 *{
     background: var(--brown);
     display: block;
     overflow: hidden;
-}
-
-header ul *:hover, .grid-area__top2 ul *:hover,
-footer ul *:hover, .grid-area__left ul *:hover,
-.grid-area__right ul *:hover{
-    background: var(--blue);
 }
 
 main{

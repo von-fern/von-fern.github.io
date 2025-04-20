@@ -15,12 +15,15 @@
 <body class="body">
     
     <header class="grid-area__top"><h1>Welcome</h1></header>
+
     <nav class="grid-area__top2">
-        <ul class="position__sticky">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="html_css.html">HTML y CSS</a></li>
-            <li><a href="">CCCC</a></li>
-        </ul>
+        <div  class="position__sticky">
+            <ul class="display__flex justify-content__center align-items__center">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="html_css.html">HTML y CSS</a></li>
+                <li><a href="">CCCC</a></li>
+            </ul>
+        </div>
     </nav>
 
     <nav class="grid-area__left position__sticky">
@@ -461,6 +464,19 @@
             <div>Spritesheet</div>
             <div class="spritesheet">
                 <div class="spritesheet__flame"></div>
+            </div>
+        </section>
+
+        <section>
+            <div>Dialog</div>
+            <div>
+                <dialog id="myDialog" open closedby="any">
+                    <h2>Welcome</h2>
+                    <p>modal example</p>
+                    <form  method="dialog">
+                        <button>Close</button>
+                    </form>
+                </dialog>
             </div>
         </section>
 
