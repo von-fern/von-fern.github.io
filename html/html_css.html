@@ -9,482 +9,480 @@
     <meta name="description" content="Test simple web">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/html_css.css">
-
 </head>
 
-<body class="body">
-    
-    <header class="grid-area__top"><h1>Welcome</h1></header>
-
-    <nav class="grid-area__top2">
-        <div  class="position__sticky">
-            <ul class="display__flex justify-content__center align-items__center">
+<body>
+    <header id="header" class="display__flex">
+        <picture id="logo-img">
+            <source srcset="../img/debian-linux.webp" media="(min-width: 600px)" />
+            <img src="../img/Openlogo-debianV2.svg.png" alt="Logo" />
+        </picture>
+        
+        <nav id="navbar">
+            <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="html_css.html">HTML y CSS</a></li>
-                <li><a href="">CCCC</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
             </ul>
+        </nav>
+
+        <div id="profile" class="float-right">
+            <picture id="profile-img">
+                <source srcset="../img/debian-linux.webp" media="(min-width: 600px)" />
+                <img src="../img/Openlogo-debianV2.svg.png" alt="FAMM" />
+            </picture>         
+            <div>Welcome</div>
         </div>
-    </nav>
+    </header>
 
-    <nav class="grid-area__left position__sticky">
-        <ul>
-            <li><a href="#float">Float</a></li>
-            <li><a href="#flex">Flex</a></li>
-            <li><a href="#inputs">Inputs</a></li>
-            <li><a href="#borders">Bordes</a></li>
-            <li><a href="#shadows">Sombras</a></li>
-            <li><a href="#gradients">Gradientes</a></li>
-            <li><a href="#filters">Filtros</a></li>
-            <li><a href="#2dtransformations">Transformaciones 2D</a></li>
-            <li><a href="#3dtransformations">Transformaciones 3D</a></li>
-            <li><a href="#spritesheet">Spritesheet</a></li>
-        </ul>
-    </nav>
+    <section id="layout">
+        <nav id="left-sidebar">
+            <ul>
+                <li><a href="#float">Float</a></li>
+                <li><a href="#flex">Flex</a></li>
+                <li><a href="#inputs">Inputs</a></li>
+                <li><a href="#borders">Bordes</a></li>
+                <li><a href="#shadows">Sombras</a></li>
+                <li><a href="#gradients">Gradientes</a></li>
+                <li><a href="#filters">Filtros</a></li>
+                <li><a href="#2dtransformations">Transformaciones 2D</a></li>
+                <li><a href="#3dtransformations">Transformaciones 3D</a></li>
+                <li><a href="#spritesheet">Spritesheet</a></li>
+            </ul>
+        </nav>
 
-    <nav class="grid-area__right">
-        <ul>
-            <li><a href="">AAAA</a></li>
-            <li><a href="">BBB</a></li>
-            <li><a href="">CCC</a></li>
-        </ul>
-    </nav>
-
-    <main class="grid-area__main">
-        <section>
-            <div>Referencias</div>
-            <div class="padre">
-                <h1>h1</h1>
-                <h2>h2 h1+h2</h2>
-                <h2>h2</h2>
-                    <div>div > div</div>
-                    <div>div > div
-                        <h1>h1</h1>
-                        <div>div</div>
+        <main>
+            <article id="referencias">
+                <h3>Referencias</h3>
+                <div class="padre">
+                    <h1>h1</h1>
+                    <h2>h2 h1+h2</h2>
+                    <h2>h2</h2>
+                        <div>div > div</div>
+                        <div>div > div
+                            <h1>h1</h1>
+                            <div>div</div>
+                        </div>
+                        <div>div > div</div>
+                    <h2>h2</h2>
+                    <h3>h3 h2~h3</h3>
+                    <h3>h3 h2~h3</h3>
+                    <h3>h3 h2~h3</h3>
+                    <h3>h3 h2~h3</h3>
+                </div>
+            </article>
+    
+            <article id="float">
+                <h3>float</h3>
+                <div class="box">
+                    <div class="test-box">
+                        <h4>Float left</h4>
+                        <div class="style-box float-left">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
-                    <div>div > div</div>
-                <h2>h2</h2>
-                <h3>h3 h2~h3</h3>
-                <h3>h3 h2~h3</h3>
-                <h3>h3 h2~h3</h3>
-                <h3>h3 h2~h3</h3>
-
-            </div>
-        </section>
-
-        <section id="float">
-            <div>float</div>
-            <div class="box display__inline-block">
-                <p>Float left</p>
-                <div class="test-box float-left">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div class="test-box">
+                        <p>Float right</p>
+                        <div class="style-box float-right">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </article>
+        
+            <article id="flex">
+                <h3>Justify</h3>
+                <div class="box">
+                    <div class="test-box">
+                        <p>start</p>
+                        <div class="style-box display__flex justify-content__start">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
 
-            <div class="box display__inline-block">
-                <p>Float right</p>
-                <div class="test-box float-right">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div class="test-box">
+                        <p>end</p>
+                        <div class="style-box display__flex justify-content__end">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                
+                    <div class="test-box">
+                        <p>center</p>
+                        <div class="style-box display__flex justify-content__center">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>                
+
+                    <div class="test-box">
+                        <p>around</p>
+                        <div class="style-box display__flex justify-content__space-around">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                
+                    <div class="test-box">
+                        <p>between</p>
+                        <div class="style-box display__flex justify-content__space-between">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="test-box">
+                        <p>evenly</p>
+                        <div class="style-box display__flex justify-content__space-evenly">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </article>
     
-        <section id="flex">
-            <div>Justify</div>
-            <div class="box display__inline-block">
-                <p>start</p>
-                <div class="test-box display__flex justify-content__start">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    
+            <article>
+                <h3>Align Items</h3>
+                <div class="box">
+                    <div class="test-box">
+                        <p>flex-start</p>
+                        <div class="style-box display__flex align-items__flex-start">
+                            <div style="height: 40px; width: 10px;"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+        
+                    <div class="test-box">
+                        <p>center</p>
+                        <div class="style-box display__flex align-items__center">
+                            <div style="height: 40px; width: 10px;"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+        
+                    <div class="test-box">
+                        <p>flex-end</p>
+                        <div class="style-box display__flex align-items__flex-end">
+                            <div style="height: 40px; width: 10px;"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>end</p>
-                <div class="test-box display__flex justify-content__end">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>center</p>
-                <div class="test-box display__flex justify-content__center">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>around</p>
-                <div class="test-box display__flex justify-content__space-around">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>between</p>
-                <div class="test-box display__flex justify-content__space-between">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>evenly</p>
-                <div class="test-box display__flex justify-content__space-evenly">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div>Align Items</div>
-            <div class="box display__inline-block">
-                <p>flex-start</p>
-                <div class="test-box display__flex align-items__flex-start">
-                    <div style="height: 40px; width: 10px;"></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>center</p>
-                <div class="test-box display__flex align-items__center">
-                    <div style="height: 40px; width: 10px;"></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>flex-end</p>
-                <div class="test-box display__flex align-items__flex-end">
-                    <div style="height: 40px; width: 10px;"></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div>Align content</div>
-            <div class="box display__inline-block">
-                <p>flex-start</p>
-                <div class="test-box display__flex align-content align-content__flex-start">
-                    <div>1</br>2</div>
-                    <div>Hello</div>
-                    <div>Hi</div>
-                    <div>Hola</div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>center</p>
-                <div class="test-box display__flex align-content align-content__center">
-                    <div>Hello</div>
-                    <div>1</br>2</div>
-                    <div>Hi</div>
-                    <div">Hola</div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>flex-end</p>
-                <div class="test-box display__flex align-content align-content align-content__flex-end">
-                    <div>Hello</div>
-                    <div>Hi</div>
-                    <div>Hola</div>
-                    <div>1</br>2</div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>S. Around</p>
-                <div class="test-box display__flex align-content align-content align-content__saround">
-                    <div>Hello</div>
-                    <div>Hi</div>
-                    <div>1</br>2</div>
-                    <div>Hola</div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>S. Between</p>
-                <div class="test-box display__flex align-content align-content align-content__sbetween">
-                    <div>Hello</div>
-                    <div>Hi</div>
-                    <div>Hola</div>
-                    <div>1</br>2</div>
-                </div>
-            </div>
-
-            <div class="box display__inline-block">
-                <p>S. Evenly</p>
-                <div class="test-box display__flex align-content align-content align-content__sevenly">
-                    <div>Hello</div>
-                    <div>Hi</div>
-                    <div>1</br>2</div>
-                    <div>Hola</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="inputs">
-            <div>Inputs</div>
-            <div class="inputs">
-                <div>
-                    <p>button</p>
-                    <input type="button" name="button" value="Button"/></div>
-                <div>
-                    <p>checkbox</p>
-                    <input type="checkbox" name="checkbox"/></div>
-                <div>
-                    <p>radio</p>
-                    <input type="radio" name="radio"/></div>
-                <div>
-                    <p>range</p>
-                    <input type="range" name="range" min="0" max="100"/></div>
-                <div>
-                    <p>reset</p>
-                    <input type="reset" name="reset"/></div>
-                <div>
-                    <p>color</p>
-                    <input type="color" name="color"/></div>
-                <div>
-                    <p>submit</p>
-                    <input type="submit" name="submit"/></div>
-
-                <div>
-                    <p>date</p>
-                    <input type="date" name="date"/></div>
-                <div>
-                    <p>datetime-local</p>
-                    <input type="datetime-local" name="datetime-local"/></div>
-                <div>
-                    <p>search</p>
-                    <input type="search" name="search"/></div>
-                <div>
-                    <p>file</p>
-                    <input type="file" name="file" accept="image/*, text/*"/></div>
-                <div>
-                    <p>image</p>
-                    <input type="image" name="image" src="image" alt="image input"/></div>
-                <div>
-                    <p>tel</p>
-                    <input type="tel" name="tel"/></div>
-                <div>
-                    <p>text</p>
-                    <input type="text" name="text"/></div>
-                <div>
-                    <p>time</p>
-                    <input type="time" name="time"/></div>
-                <div>
-                    <p>url</p>
-                    <input type="url" name="url"/></div>                
-                <div>
-                    <p>number</p>
-                    <input type="number" name="number"/></div>
-                <div>
-                    <p>email</p>
-                    <input type="email" name="email"/></div>
-                <div>
-                    <p>password</p>
-                    <input type="password" name="password"/></div>
-            </div>
-        </section>
-
-        <section id="borders">
-            <div>Borders</div>
-            <div class="box display__inline-block bs__dotted">
-                <p>Dotted</p>
-            </div>
-            <div class="box display__inline-block bs__dashed">
-                <p>Dashed</p>
-            </div>
-            <div class="box display__inline-block bs__solid">
-                <p>Solid</p>
-            </div>
-            <div class="box display__inline-block bs__double">
-                <p>Double</p>
-            </div>
-            <div class="box display__inline-block bs__groove">
-                <p>Groove</p>
-            </div>
-            <div class="box display__inline-block bs__ridge">
-                <p>Ridge</p>
-            </div>
-            <div class="box display__inline-block bs__inset">
-                <p>Inset</p>
-            </div>
-            <div class="box display__inline-block bs__outset">
-                <p>Outset</p>
-            </div>
-            <div class="box display__inline-block bs__none">
-                <p>none</p>
-            </div>
-            <div class="box display__inline-block bs__hidden">
-                <p>hidden</p>
-            </div>
-            <div class="box display__inline-block bs__mix">
-                <p>Mix</p>
-            </div>
-        </section>
-
-        <section id="shadows">
-            <div>Shadows</div>
-            <div class="box display__inline-block box-shadow">
-                <p>Box Shadow</p>
-            </div>
-            <div class="box display__inline-block box-shadow__inset">
-                <p>BS inset</p>
-            </div>
-            <div class="box display__inline-block text-shadow">
-                <p>Text Shadow</p>
-            </div>
-        </section>
-
-        <section id="gradients">
-            <div>Gradientes</div>
-            <div class="img-box display__inline-block linear-gradient__simple">
-                <p>simple</p>
-            </div>
-            <div class="img-box display__inline-block linear-gradient__to-right">
-                <p>to-right</p>
-            </div>
-            <div class="img-box display__inline-block linear-gradient__diagonal ">
-                <p>diagonal</p>
-            </div>
-            <div class="img-box display__inline-block linear-gradient__angled">
-                <p>angled</p>
-            </div>
-            <div class="img-box display__inline-block linear-gradient__colors">
-                <p>colors</p>
-            </div>
-            <div class="img-box display__inline-block linear-gradient__v-colors">
-                <p>v-colors</p>
-            </div>
-            <div class="img-box display__inline-block linear-gradient__stripped">
-                <p>stripped</p>
-            </div>
-        </section>
-
-        <section id="filters">
-            <div>Filters</div>
-            <div class="img-box display__inline-block filter__drop-shadow">
-                <p>Drop-shadow</p>
-            </div>
-            <div class="img-box display__inline-block filter__blur">
-                <p>Blur</p>
-            </div>
-            <div class="img-box display__inline-block filter__grayscale">
-                <p>Grayscale</p>
-            </div>
-            <div class="img-box display__inline-block filter__sepia">
-                <p>Sepia</p>
-            </div>
-            <div class="img-box display__inline-block filter__brightness">
-                <p>Brightness</p>
-            </div>
-            <div class="img-box display__inline-block filter__contrast">
-                <p>Contrast</p>
-            </div>
-            <div class="img-box display__inline-block filter__hue-rotate">
-                <p>Hue-rotate</p>
-            </div>
-            <div class="img-box display__inline-block filter__invert">
-                <p>Invert</p>
-            </div>
-            <div class="img-box display__inline-block filter__saturate">
-                <p>Saturate</p>
-            </div>
-            <div class="img-box display__inline-block filter__opacity">
-                <p>Opacity</p>
-            </div>
-        </section>
-
-        <section id="2dtransformations">
-            <div>Transformaciones 2D</div>
-            <div class="img-box display__inline-block t2d__scale">
-                <p>Scale</p>
-            </div>
-            <div class="img-box display__inline-block t2d__rotate">
-                <p>Rotate</p>
-            </div>
-            <div class="img-box display__inline-block t2d__skew">
-                <p>Skew</p>
-            </div>
-            <div class="img-box display__inline-block t2d__translate">
-                <p>Translate</p>
-            </div>
-        </section>
-
-        <section id="3dtransformations">
-            <div>Transformaciones 3D</div>
-            <div class="img-box display__inline-block t3d__scale">
-                <p>Scale</p>
-            </div>
-            <div class="img-box display__inline-block t3d__translate">
-                <p>Translate</p>
-            </div>
-            <div class="img-box display__inline-block t3d__rotate">
-                <p>Rotate</p>
-            </div>
-        </section>
-
-        <section id="spritesheet">
-            <div>Spritesheet</div>
-            <div class="spritesheet">
-                <div class="spritesheet__flame"></div>
-            </div>
-        </section>
-
-        <section>
-            <div>Dialog</div>
-            <div>
-                <dialog id="myDialog" open closedby="any">
-                    <h2>Welcome</h2>
-                    <p>modal example</p>
-                    <form  method="dialog">
-                        <button>Close</button>
-                    </form>
-                </dialog>
-            </div>
-        </section>
-
-    </main>
+            </article>
     
-    <aside></aside>
+            <article>
+                <h3>Align content</h3>
+                <div class="box">
+                    <div class="test-box">
+                        <p>flex-start</p>
+                        <div class="style-box-a display__flex align-content__flex-start">
+                            <div style="height: 40px;">1</br>2</div>
+                            <div>Hello</div>
+                            <div>Hi</div>
+                            <div>Hola</div>
+                        </div>
+                    </div>
+        
+                    <div class="test-box">
+                        <p>center</p>
+                        <div class="style-box-a display__flex align-content align-content__center">
+                            <div>Hello</div>
+                            <div>1</br>2</div>
+                            <div>Hi</div>
+                            <div>Hola</div>
+                        </div>
+                    </div>
 
-    <footer class="grid-area__bottom"></footer>
+                    <div class="test-box">
+                        <p>flex-end</p>
+                        <div class="style-box-a display__flex align-content align-content__flex-end">
+                            <div>Hello</div>
+                            <div>Hi</div>
+                            <div>Hola</div>
+                            <div>1</br>2</div>
+                        </div>
+                    </div>
+        
+                    <div class="test-box">
+                        <p>S. Around</p>
+                        <div class="style-box-a display__flex align-content align-content__saround">
+                            <div>Hello</div>
+                            <div>Hi</div>
+                            <div>1</br>2</div>
+                            <div>Hola</div>
+                        </div>
+                    </div>
+        
+                    <div class="test-box">
+                        <p>S. Between</p>
+                        <div class="style-box-a display__flex align-content align-content__sbetween">
+                            <div>Hello</div>
+                            <div>Hi</div>
+                            <div>Hola</div>
+                            <div>1</br>2</div>
+                        </div>
+                    </div>
+        
+                    <div class="test-box">
+                        <p>S. Evenly</p>
+                        <div class="style-box-a display__flex align-content align-content__sevenly">
+                            <div>Hello</div>
+                            <div>Hi</div>
+                            <div style="height: 40px;">1</br>2</div>
+                            <div>Hola</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    
+            <article id="inputs">
+                <h3>Inputs</h3>
+                <div class="box inputs">
+                    <div>
+                        <p>button</p>
+                        <input type="button" name="button" value="Button"/></div>
+                    <div>
+                        <p>checkbox</p>
+                        <input type="checkbox" name="checkbox"/></div>
+                    <div>
+                        <p>radio</p>
+                        <input type="radio" name="radio"/></div>
+                    <div>
+                        <p>range</p>
+                        <input type="range" name="range" min="0" max="100"/></div>
+                    <div>
+                        <p>reset</p>
+                        <input type="reset" name="reset"/></div>
+                    <div>
+                        <p>color</p>
+                        <input type="color" name="color"/></div>
+                    <div>
+                        <p>submit</p>
+                        <input type="submit" name="submit"/></div>
+                    <div>
+                        <p>date</p>
+                        <input type="date" name="date"/></div>
+                    <div>
+                        <p>datetime-local</p>
+                        <input type="datetime-local" name="datetime-local"/></div>
+                    <div>
+                        <p>search</p>
+                        <input type="search" name="search"/></div>
+                    <div>
+                        <p>file</p>
+                        <input type="file" name="file" accept="image/*, text/*"/></div>
+                    <div>
+                        <p>image</p>
+                        <input type="image" name="image" src="image" alt="image input"/></div>
+                    <div>
+                        <p>tel</p>
+                        <input type="tel" name="tel"/></div>
+                    <div>
+                        <p>text</p>
+                        <input type="text" name="text"/></div>
+                    <div>
+                        <p>time</p>
+                        <input type="time" name="time"/></div>
+                    <div>
+                        <p>url</p>
+                        <input type="url" name="url"/></div>                
+                    <div>
+                        <p>number</p>
+                        <input type="number" name="number"/></div>
+                    <div>
+                        <p>email</p>
+                        <input type="email" name="email"/></div>
+                    <div>
+                        <p>password</p>
+                        <input type="password" name="password"/></div>
+                </div>
+            </article>
+    
+            <article id="borders">
+                <div>Borders</div>
+                <div class="box">
+                    <div class="test-box display__inline-block bs__dotted">
+                        <p>Dotted</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__dashed">
+                        <p>Dashed</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__solid">
+                        <p>Solid</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__double">
+                        <p>Double</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__groove">
+                        <p>Groove</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__ridge">
+                        <p>Ridge</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__inset">
+                        <p>Inset</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__outset">
+                        <p>Outset</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__none">
+                        <p>none</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__hidden">
+                        <p>hidden</p>
+                    </div>
+                    <div class="test-box display__inline-block bs__mix">
+                        <p>Mix</p>
+                    </div>
+                </div>
+            </article>
+    
+            <article id="shadows">
+                <h3>Shadows</h3>
+                <div class="box">
+                    <div class="test-box display__inline-block box-shadow">
+                        <p>Box Shadow</p>
+                    </div>
+                    <div class="test-box display__inline-block box-shadow__inset">
+                        <p>BS inset</p>
+                    </div>
+                    <div class="test-box display__inline-block text-shadow">
+                        <p>Text Shadow</p>
+                    </div>
+                </div>
+            </artile>
+    
+            <article id="gradients">
+                <h3>Gradientes</h3>
+                <div class="img-box display__inline-block linear-gradient__simple">
+                    <p>simple</p>
+                </div>
+                <div class="img-box display__inline-block linear-gradient__to-right">
+                    <p>to-right</p>
+                </div>
+                <div class="img-box display__inline-block linear-gradient__diagonal ">
+                    <p>diagonal</p>
+                </div>
+                <div class="img-box display__inline-block linear-gradient__angled">
+                    <p>angled</p>
+                </div>
+                <div class="img-box display__inline-block linear-gradient__colors">
+                    <p>colors</p>
+                </div>
+                <div class="img-box display__inline-block linear-gradient__v-colors">
+                    <p>v-colors</p>
+                </div>
+                <div class="img-box display__inline-block linear-gradient__stripped">
+                    <p>stripped</p>
+                </div>
+            </article>
+    
+            <section id="filters">
+                <div>Filters</div>
+                <div class="img-box display__inline-block filter__drop-shadow">
+                    <p>Drop-shadow</p>
+                </div>
+                <div class="img-box display__inline-block filter__blur">
+                    <p>Blur</p>
+                </div>
+                <div class="img-box display__inline-block filter__grayscale">
+                    <p>Grayscale</p>
+                </div>
+                <div class="img-box display__inline-block filter__sepia">
+                    <p>Sepia</p>
+                </div>
+                <div class="img-box display__inline-block filter__brightness">
+                    <p>Brightness</p>
+                </div>
+                <div class="img-box display__inline-block filter__contrast">
+                    <p>Contrast</p>
+                </div>
+                <div class="img-box display__inline-block filter__hue-rotate">
+                    <p>Hue-rotate</p>
+                </div>
+                <div class="img-box display__inline-block filter__invert">
+                    <p>Invert</p>
+                </div>
+                <div class="img-box display__inline-block filter__saturate">
+                    <p>Saturate</p>
+                </div>
+                <div class="img-box display__inline-block filter__opacity">
+                    <p>Opacity</p>
+                </div>
+            </section>
+    
+            <section id="2dtransformations">
+                <div>Transformaciones 2D</div>
+                <div class="img-box display__inline-block t2d__scale">
+                    <p>Scale</p>
+                </div>
+                <div class="img-box display__inline-block t2d__rotate">
+                    <p>Rotate</p>
+                </div>
+                <div class="img-box display__inline-block t2d__skew">
+                    <p>Skew</p>
+                </div>
+                <div class="img-box display__inline-block t2d__translate">
+                    <p>Translate</p>
+                </div>
+            </section>
+    
+            <section id="3dtransformations">
+                <div>Transformaciones 3D</div>
+                <div class="img-box display__inline-block t3d__scale">
+                    <p>Scale</p>
+                </div>
+                <div class="img-box display__inline-block t3d__translate">
+                    <p>Translate</p>
+                </div>
+                <div class="img-box display__inline-block t3d__rotate">
+                    <p>Rotate</p>
+                </div>
+            </section>
+    
+            <section id="spritesheet">
+                <div>Spritesheet</div>
+                <div class="spritesheet">
+                    <div class="spritesheet__flame"></div>
+                </div>
+            </section>
+    
+            <section>
+                <div>Dialog</div>
+                <div>
+                    <dialog id="myDialog" open closedby="any">
+                        <h2>Welcome</h2>
+                        <p>modal example</p>
+                        <form  method="dialog">
+                            <button>Close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </section>
+        </main>
+
+        <aside id="right-sidebar">Hello</aside>
+    </section>
+
+    <footer>Footer</footer>
 
     <script src="js/app.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>

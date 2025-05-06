@@ -1,51 +1,61 @@
-/* cajas */
-main section{
-  width: 100%;
-}
-
 section{
+  width: 100%;
   border: solid 2px var(--gray);
 }
 
-.display__block{          display: block;}
-.display__inline-block{   display: inline-block;}
-.display__flex{           display: flex; flex-wrap: wrap;}
-.display__flex div{       display: flex;}
+article{
+  width: 100%;
+  text-align: center;
+}
 
 .box{
-  width: 100px;
-  height: 125px;
-  margin: 5px;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
   border: solid 1px var(--red);
-}
-
-nav ul{
-  height: 100%;
-}
-
-nav li{
-  list-style: none;
-}
-
-nav a{
-  padding: 5px;
-}
-
-nav a:hover{
-  background: var(--blue);
-  cursor: pointer;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-evenly
 }
 
 .test-box{
-  width: 98px;
-  height: 100px;
-  background: var(--gray);
+  width: 102px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
   border: solid 1px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.test-box div{
+.style-box{
+  width: 100px;
+  height: 100px;
+  border: solid 1px var(--red);
+}
+
+.style-box-a{
+  width: 100px;
+  height: 100px;
+  border: solid 1px var(--red);
+  flex-wrap: wrap;
+}
+
+.style-box-a div{
+  width: auto;
+  height: auto;
+}
+
+.style-box div{
   width: 24px;
   height: 24px;
+  background: var(--black);
+  border: solid 1px var(--red);
+}
+
+.style-box-a div{
+  height: 20px;
   background: var(--black);
   border: solid 1px var(--red);
 }
@@ -63,11 +73,8 @@ nav a:hover{
   background-position: center;
 }
 
-
-
 .text-align__center li{text-align: center;}
 .text-align__justify{text-align:justify;}
-
 
 /* Referencias */
 .padre > h1{background: var(--gray);}
@@ -76,7 +83,6 @@ h2 ~ h3{color: aqua;}
 .padre > div{color: chocolate;}
 
 /* Float */
-
 .float-left div{float: left;}
 .float-right div{float:right;}
 

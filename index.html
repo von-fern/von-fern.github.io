@@ -10,42 +10,67 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="body">
-    <header class="grid-area__top">
-        <div class="float-left">Logo</div>
-        <div class="float-right">Profile</div>
+<body>
+    <header id="header" class="display__flex">
+        <picture id="logo-img">
+            <source srcset="img/debian-linux.webp" media="(min-width: 600px)" />
+            <img src="img/Openlogo-debianV2.svg.png" alt="Logo" />
+        </picture>
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/html_css.html">HTML y CSS</a></li>
+                <li><a href="html/portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
+
+        <div id="profile" class="float-right">
+            <picture id="profile-img">
+                <source srcset="img/debian-linux.webp" media="(min-width: 600px)" />
+                <img src="img/Openlogo-debianV2.svg.png" alt="FAMM" />
+            </picture>         
+            <div>Welcome</div>
+        </div>
     </header>
-    <nav class="grid-area__top2">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="html/html_css.html">HTML y CSS</a></li>
-            <li><a href="">Física</a></li>
-        </ul>
-    </nav>
 
-    <nav class="grid-area__left">
-        <ul class="position__sticky">
-            <li><a href="">AAAA</a></li>
-            <li><a href="">BBB</a></li>
-            <li><a href="">CCC</a></li>
-        </ul>
-    </nav>
+    <section id="layout">
+        <nav id="left-sidebar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/html_css.html">HTML y CSS</a></li>
+                <li><a href="html/portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
 
-    <nav class="grid-area__right">
-        <ul>
-            <li><a href="">AAAA</a></li>
-            <li><a href="">BBB</a></li>
-            <li><a href="">CCC</a></li>
-        </ul>
-    </nav>
+        <main>
+            <section>
+                <h2>Tecnologias</h2></br>
+                <ul>
+                    <img class="icon" src="img/css.svg" alt="css">
+                    <img class="icon" src="img/dj.svg" alt="dj">
+                    <img class="icon" src="img/github-mark-white.svg" alt="github">
+                    <img class="icon" src="img/html.svg" alt="html">
+                    <img class="icon" src="img/js.svg" alt="js">
+                    <img class="icon" src="img/pgsql.png" alt="pgsql">
+                    <img class="icon" src="img/py.svg" alt="py">                
+                </ul>
+            </section>
+            <section>
+                <h2>Cursos</h2></br>
+                <ul>
+                    <li>Curso de Git y Github</li>
+                    <li>Curso profesional de HTML y CSS</li>
+                    <li>Curso de Python práctico desde cero</li>
+                    <li>Curso profesional de Python</li>
+                </ul>
+            </section>
+        </main>
 
-    <main class="grid-area__main">
-        <section>
+        <aside id="right-sidebar">Hello</aside>        
+    </section>
 
-        </section>
-    </main>
-
-    <footer class="grid-area__bottom"></footer>
+    <footer>footer</footer>
       
     <script src="JS/app.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>

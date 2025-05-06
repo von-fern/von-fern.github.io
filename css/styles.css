@@ -1,83 +1,172 @@
 :root {
-    --green:#00FF00;
-    --white:#ffffff;
-    --black:#000000;
-    --blue:#0000ff;
-    --gray:#808080;
-    --cyan:#00FFFF;
-    --brown:#804000;
-    --red:#ff0000;
+  --green:rgb(133, 243, 133);
+  --white:#ffffff;
+  --black:#000000;
+  --blue:#0f0fbe;
+  --gray:#808080;
+  --cyan:#00FFFF;
+  --brown:#946231;
+  --red:#bd4242;
 }
 
 * { /* Estilo general */
-    color: var(--white); /* Fuente */
-    font-family: helvetica;
-    text-align: center;
-    vertical-align: middle;
-    margin:0%;
-    padding: 0%;
-    background: var(--black);
+  color: var(--white); /* Fuente */
+  font-family: helvetica;
+  margin:0%;
+  padding: 0%;
+  background: var(--black);
 }
 
-/* Grid */
-
-body.body{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    min-height: 100vh;
-    grid:
-        "top top top" auto
-        "top2 top2 top2" auto
-        "left main right" 1fr
-        "bottom bottom bottom" auto
-        / auto 1fr auto;
-    gap: 8px;
-}
-
-.grid-area__top{    grid-area: top;}
-.grid-area__top2{   grid-area: top2;}
-.grid-area__left{   grid-area: left;}
-.grid-area__main{   grid-area: main;}
-.grid-area__right{  grid-area: right;}
-.grid-area__bottom{ grid-area: bottom;}
-
-.grid-area__top2{
-    height:45px;
-    background: var(--black);
-    overflow: hidden;
-}
-
-.grid-area__top2 div{
-    height: 100%;
-}
-
-header, header *,
-footer, footer *{
-    height:45px;
-    background: var(--brown);
-    overflow: hidden;
-}
-
-.grid-area__left{
-    height: 85vh;
-}
-
-.grid-area__left, .grid-area__left *,
-.grid-area__right, .grid-area__right *{
-    background: var(--brown);
-    display: block;
-    overflow: hidden;
-}
-
-main{
-    width: 100%;
-}
+.display__block{          display: block;}
+.display__inline-block{   display: inline-block;}
+.display__flex{           display: flex;}
+.display__flex div{       display: flex;}
 
 .position__static{  position: static;}
 .position__absolute{position: absolute;}
 .position__relative{position: relative;}
 .position__sticky{  position: sticky; top: 40px;}
 
-.float-left{float: left;}
-.float-right{float: right;}
+.float-left{    float: left;}
+.float-right{   float: right;}
+
+/* nav nav nav nav nav nav nav nav nav nav nav nav */
+
+nav ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+li{list-style: none;}
+nav a{padding: 5px;}
+
+nav a:hover{
+  background: var(--blue);
+  cursor: pointer;
+}
+
+/* nav nav nav nav nav nav nav nav nav nav nav nav */
+/* Header Header Header Header Header Header Navbar*/
+
+#header{
+  width: auto;
+  height: 82px;
+  align-content: center;
+  align-items: center;
+  border: solid 1px var(--red);
+}
+
+#logo-img{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+  width: 180px;
+  height: 60px;
+}
+
+#logo-img img{
+  background: var(--white);
+  height: 100%;
+  border-radius: 10px;
+  object-fit:contain;
+}
+
+#profile{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 62px;
+}
+
+#profile-img{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+  height: 60px;
+}
+
+#profile-img img{
+  background: var(--white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit:contain;
+}
+
+#profile div{
+  padding: 0px 20px 0px 5px;
+}
+@media (max-width: 880px){#profile div{
+    display: none;
+  }
+}
+
+/* Header Header Header Header Header Header Header*/
+/* Navbar Navbar Navbar Navbar Navbar Navbar Navbar*/
+
+#navbar{
+  margin: auto;
+  border: solid 1px var(--red);
+  height: 40px;
+  width: 300px;
+}
+
+/* Navbar Navbar Navbar Navbar Navbar Navbar */
+
+#layout{
+  display: flex;
+  flex: 1;
+  min-height: 80vh;
+}
+
+/* sidebars sidebars sidebars sidebars sidebars */
+
+#left-sidebar{
+  width: 180px;
+  height: 80vh;
+  position: sticky;
+  top: 0;
+  border: solid 1px var(--red);
+}
+
+#left-sidebar ul{
+  flex-direction: column;
+  border: solid 1px var(--red);
+}
+
+#right-sidebar{
+  width: 180px;
+  border: solid 1px var(--red);
+}
+
+@media (max-width: 880px){#left-sidebar, #right-sidebar{
+  display: none;
+}}
+
+/* sidebars sidebars sidebars sidebars sidebars */
+
+main{
+  flex: 1;
+  border: solid 1px var(--red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  display: flex;
+  height: 82px;
+  justify-content: center;
+}
+
+.icon{
+  height: 20px;
+  width: 20px;
+}
