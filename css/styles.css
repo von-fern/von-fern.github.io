@@ -112,10 +112,17 @@ nav a:hover{
 /* Navbar Navbar Navbar Navbar Navbar Navbar Navbar*/
 
 #navbar{
-  margin: auto;
-  border: solid 1px var(--red);
   height: 40px;
   width: 300px;
+  display: flex;
+  overflow-x: auto;
+  border: solid 1px var(--red);
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+#navbar a{
+  white-space: nowrap;
 }
 
 /* Navbar Navbar Navbar Navbar Navbar Navbar */
@@ -134,6 +141,7 @@ nav a:hover{
   position: sticky;
   top: 0;
   border: solid 1px var(--red);
+  overflow: scroll;
 }
 
 #left-sidebar ul{
