@@ -103,6 +103,7 @@ nav a:hover{
 #profile div{
   padding: 0px 20px 0px 5px;
 }
+
 @media (max-width: 880px){#profile div{
     display: none;
   }
@@ -113,7 +114,7 @@ nav a:hover{
 
 #navbar{
   height: 40px;
-  width: 300px;
+  min-width: 200px;
   display: flex;
   overflow-x: auto;
   border: solid 1px var(--red);
@@ -160,13 +161,61 @@ nav a:hover{
 
 /* sidebars sidebars sidebars sidebars sidebars */
 
+/* main main main main main main main main main*/
+
 main{
-  flex: 1;
-  border: solid 1px var(--red);
   display: flex;
+  flex: 1;
   flex-direction: column;
+  border: solid 1px var(--red);
   align-items: center;
+  align-content: space-evenly;
 }
+
+/* bio bio bio bio bio bio bio bio bio bio bio bio bio */
+#bio{
+  width: 800px;
+  border: solid 1px var(--red);
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#bio-a{
+  width: 40%;
+  flex-direction: column;
+  border: solid 1px var(--red);
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#bio-img{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+  height: 200px;
+}
+
+#bio-img img{
+  background: var(--white);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit:contain;
+}
+
+#bio-b{
+  width: 60%;
+  padding: 10px;
+}
+
+@media (max-width: 880px){#bio, #bio-a{
+  flex-direction: column;
+  width: 100%;
+}}
 
 footer{
   display: flex;
@@ -174,7 +223,8 @@ footer{
   justify-content: center;
 }
 
-.icon{
+.icon svg{
   height: 20px;
   width: 20px;
+  object-fit: contain;
 }
