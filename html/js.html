@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <meta name="description" content="Test simple web">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/js.css">
+</head>
+
+<body>
+    <header id="header" class="display__flex">
+        <picture id="logo-img">
+            <source srcset="../img/debian-linux.webp" media="(min-width: 600px)" />
+            <img src="../img/Openlogo-debianV2.svg.png" alt="Logo" />
+        </picture>
+        
+        <nav id="navbar">
+            <a id="menu" href=""><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1"/></svg></a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="html_css.html">HTML y CSS</a></li>
+                <li><a href="js.html">JS</a></li>
+            </ul>
+        </nav>
+
+        <div id="profile" class="float-right">
+            <picture id="profile-img">
+                <source srcset="../img/debian-linux.webp" media="(min-width: 600px)" />
+                <img src="../img/Openlogo-debianV2.svg.png" alt="FAMM" />
+            </picture>         
+            <div>Welcome</div>
+        </div>
+    </header>
+
+    <section id="layout">
+        <nav id="left-sidebar">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <article>
+                    <div id="op__if"></div>
+                    <div id="op__switch"></div>
+                    <div id="op__for"></div>
+                    <div id="op__while"></div>
+                    <div id="op__do_while"></div>
+                    <div id="op__continue"></div>
+                    <div id="op__break"></div>
+                </article>
+            </section>
+        </main>
+
+        <aside id="right-sidebar">
+            <ul>
+                <li>Hi</li>
+            </ul>
+        </aside>
+        
+    </section>
+
+    <footer>Footer</footer>
+
+    <script src="../js/app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    
+</body>
+</html>
