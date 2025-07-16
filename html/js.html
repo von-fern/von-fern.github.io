@@ -46,6 +46,8 @@
 
         <main>
             <section>
+                <h1>Condicionales</h1>
+
                 <article>
                     <div id="op__if"></div>
                     <div id="op__switch"></div>
@@ -56,6 +58,99 @@
                     <div id="op__break"></div>
                 </article>
             </section>
+
+            <section>
+                <h1>Funciones</h1>
+            </section>
+
+            <section>
+                <article>
+                    <h2>Speed calc</h2>
+                    <div class="speed_calc">
+                        <label for="distance">Distancia</label>
+                        <input class="float-right" type="number" id="distance" placeholder="0"/>
+                    </div>
+                    <div class="speed_calc">
+                        <label for="time">Tiempo</label>
+                        <input class="float-right" type="number" id="time" placeholder="0"/>
+                    </div>
+                    <div  class="speed_calc">
+                        <label for="speed">Speed</label>
+                        <input class="float-right" type="number" id="speed" readonly placeholder="0"/>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div id="tabla-container"></div>
+                </article>
+            </section>
+
+            <section>
+                <h1>Objetos estandar</h1>
+                <article>
+                    <h2>Metodos strings</h2>
+                    <div id="sm-length"></div>
+                    <div id="sm-toUpperCase"></div>
+                    <div id="sm-toLowerCase"></div>
+                    <div id="sm-substring"></div>
+                    <div id="sm-startsWith"></div>
+                    <div id="sm-endsWith"></div>
+                    <div id="sm-includes"></div>
+                    <div id="sm-indexOf"></div>
+                    <div id="sm-replace"></div>
+                </article>
+            </section>
+
+            <section>
+                <button type="button" onclick="urlActual()">url actual location</button>
+                <button type="button" onclick="redirigir()">location</button>
+                <button type="button" onclick="recargar()">reload</button>
+                <button type="button" onclick="abrir()">open</button>
+            </section>
+
+            <section>
+                <div id="t_gE_id"></div>
+                <div class="t_gE_c"></div>
+                <div class="t_gE_c"></div>
+                <div id="rmE" class="t_gE_c"></div>
+                <button type="button" onclick="showDivs()">Mostrar ids de divs</button>
+                <h6></h6>
+            </section>
+
+            <section id="element_object_example">
+                <article>
+                    <div id="bg_change">
+                        <button type="button" onclick="bgToRed()">Cambiar fondo a rojo</button>
+                        <button type="button" onclick="bgToBlue()">cambiar fondo a azul</button>
+                    </div>
+                </article>
+
+                <article>
+                    <form action="" id="element-control">
+                        <label for="ce-text">Texto:</label>
+                        <input type="text" id="ce-text">
+
+                        <select id="ce-bg--color">
+                            <option value="ceBgRed">Rojo</option>
+                            <option value="ceBgGreen">Verde</option>
+                            <option value="ceBgBlue">Azul</option>
+                        </select>
+
+                        <select id="ce--jc">
+                            <option value="ceJcS">Start</option>
+                            <option value="ceJcE">End</option>
+                            <option value="ceJcC">Center</option>
+                        </select>
+                    </form>
+
+                    <div id="controlled_element">
+                        Hello
+                    </div>
+                </article>
+            </section>
+
         </main>
 
         <aside id="right-sidebar">
@@ -69,6 +164,8 @@
     <footer>Footer</footer>
 
     <script src="../js/app.js"></script>
+    <script src="../js/js.js"></script>
+
     <noscript>You need to enable JavaScript to view the full site.</noscript>
     
 </body>

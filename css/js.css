@@ -1,0 +1,53 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"] {
+    width: 50px;          /* ancho fijo */
+    padding: 5px;          /* espacio interior */
+    border: 1px solid #888;
+    box-sizing: border-box; /* incluye padding y borde en el ancho */
+  }
+
+.speed_calc{
+  display: flex;
+  width: 200px;
+  border: solid 1px red;
+}
+
+.speed_calc label{
+  width: 150px;
+  text-align: center;
+}
+
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #888; padding: 6px; text-align: left; }
+th { background: #1e38ac; }
+
+.addborder{
+  border: solid 1px var(--red);
+}
+
+.bg_blue{
+  background: blue;
+}
+
+.bg_red{
+  background: red;
+}
+
+section{
+  width: 100%;
+  border: solid 2px var(--gray);
+  text-align: center;
+  min-height: 150px;
+}
+
+#controlled_element{
+  display: flex;
+}

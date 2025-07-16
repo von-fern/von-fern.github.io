@@ -21,6 +21,7 @@
 .display__inline-block{   display: inline-block;}
 .display__flex{           display: flex;}
 .display__flex div{       display: flex;}
+.df__dc{display: flex; flex-direction: column;}
 
 .position__static{  position: static;}
 .position__absolute{position: absolute;}
