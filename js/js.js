@@ -157,10 +157,7 @@ time.addEventListener('change', recalcular);
     // Mostrar en el input de resultado
 document.getElementById('speed').value = speed;
 
- 
-const csv = `nombre,apellido,numero
-fernando,mendoza,99
-ivett,garcia,98`;
+/* -------------------- Generador de Tabla -------------------- */
 
 function crearTabla(csvTexto) {
     const filas = csvTexto.trim().split('\n');
@@ -176,9 +173,19 @@ function crearTabla(csvTexto) {
     });
     return table;
   }
-  
+
+  const csv = `nombre,apellido,numero
+  fernando,mendoza,99
+  ivett,garcia,98`;  
   const cont = document.getElementById('tabla-container');
   cont.appendChild(crearTabla(csv));
+
+  const csvParques = `Parque,Base
+  Roma,Ecológico
+  Xoclan,Xoclan
+  Japónes,Reforma`;
+  const tablaParques = document.getElementById('tabla-parques');
+  tablaParques.appendChild(crearTabla(csvParques));  
 
 /* ---------- registro de calificaciones ---------- */
 
@@ -518,6 +525,23 @@ ceJc.addEventListener("change", function () {
     }
 });
 
+/* ---------- Insertar elemento */
+
+function insertElemento(){
+    let contCE = document.getElementById('cont_ce');
+    contCE.insertAdjacentHTML("beforeend","<div id='controlled_element02'>Hello again</div>");
+}
+
+function Elemento(){
+    let contCE = document.getElementById('cont_ce');
+    contCE.insertAdjacentHTML("beforeend","<div'>Hello again</div>");
+}
+
+function removeElemento(){
+    let contCE = document.getElementById('cont_ce');
+    contCE.removeChild(controlledElement);
+}
+
 /* ---------- document */
 
 const gE_id =   document.getElementById("t_gE_id"); // Por ID
@@ -574,3 +598,35 @@ function bgToBlue(){
     bgSwitch.classList.add(addColor);
 
 }
+
+/* -------------------- Eventos -------------------- */
+
+const controlledByEvent = document.getElementById("controlled_by_event");
+const clickEvent =document.querySelector("#click_event");
+
+clickEvent.addEventListener("click", function () {
+    controlledByEvent.innerHTML = "Hola hola";
+});
+
+/* -------------------- Atributos compartidos */
+/* event.target, e.type*/
+
+const addEvents = () => {
+    let lista = document.querySelectorAll("div > h4");
+
+    for(let i = 0; i < lista.length; i++){
+        let elemento = lista[i];
+
+        elemento.addEventListener('click',changeBackground);
+        elemento.addEventListener('click',changeContent);
+    }
+}
+
+const changeBackground = (e) => {
+    e.target.style.backgroundColor = '#999999';
+}
+const changeContent = (e) => {
+    e.target.innerHTML = 'Modified';
+}
+
+addEventListener('load',addEvents);

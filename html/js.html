@@ -85,6 +85,10 @@
                 <article>
                     <div id="tabla-container"></div>
                 </article>
+
+                <article>
+                    <div id="tabla-parques"></div>
+                </article>
             </section>
 
             <section>
@@ -143,12 +147,31 @@
                             <option value="ceJcE">End</option>
                             <option value="ceJcC">Center</option>
                         </select>
+
+                        <button type="button" onclick="insertElemento()">Añadir div</button>
+                        <button type="button" onclick="removeElemento()">Eliminar div</button>
+
                     </form>
 
-                    <div id="controlled_element">
-                        Hello
+                    <div id="cont_ce">
+                        <div id="controlled_element">Hello</div>
                     </div>
+                    
                 </article>
+            </section>
+
+            <section>
+                <h2>Listeners</h2>
+                <div>
+                    <button id="click_event" type="button">Hello</button>
+                    <div id="controlled_by_event">Hi</div>
+                </div>
+                <div id="add_Events">
+                    <h4>Amarillo</h4>
+                    <h4>Azul</h4>
+                    <h4>Blanco</h4>
+                    <h4>Verde</h4>
+                </div>
             </section>
 
         </main>
