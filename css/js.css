@@ -51,3 +51,17 @@ section{
 #controlled_element{
   display: flex;
 }
+
+/* --------------- Coursor container --------------- */
+#coursor-container{
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #999999;
+}
+
+#coursor-bar{
+  width: 500px;
+  height: 40px;
+  border: 1px solid #000099;
+}

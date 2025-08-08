@@ -185,7 +185,7 @@ function crearTabla(csvTexto) {
   Xoclan,Xoclan
   Japónes,Reforma`;
   const tablaParques = document.getElementById('tabla-parques');
-  tablaParques.appendChild(crearTabla(csvParques));  
+  tablaParques.appendChild(crearTabla(csvParques));
 
 /* ---------- registro de calificaciones ---------- */
 
@@ -630,3 +630,33 @@ const changeContent = (e) => {
 }
 
 addEventListener('load',addEvents);
+
+/* --------------- Atributos propios --------------- */
+
+/* --------------- Posición el cursor */
+const getCoursorPosition = (e) => {
+    const coursor_position = document.getElementById("coursor-position");
+    coursor_position.innerHTML = `Posición x: ${e.clientX} y: ${e.clientY}`;
+}
+
+addEventListener('click',getCoursorPosition);
+
+/* --------------- Movimiento del cursor */
+
+const getCoursorOverBar = (e) => {
+    const coursorBarContainer = document.getElementById("coursor-container");
+    coursorBarContainer.addEventListener('mousemove',drawBar);
+}
+
+const drawBar = (e) => {
+    let bar = e.offsetX - 10;
+    if (bar < 0){
+        bar = 0;
+    } else if (bar > 490) {
+        bar = 490;
+    }
+    const coursorBar = document.getElementById("coursor-bar");
+    coursorBar.style.width = `${bar}px`;
+}
+
+addEventListener('load', getCoursorOverBar);
