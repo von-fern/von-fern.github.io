@@ -660,3 +660,63 @@ const drawBar = (e) => {
 }
 
 addEventListener('load', getCoursorOverBar);
+
+/* --------------- Evento de teclado */
+
+const detectarTecla = (e) =>{
+    const tecla = e.key;
+    const keyDown = document.getElementById("key-down");
+
+    switch (tecla) {
+        case '0':
+            keyDown.style.backgroundColor = 'red';
+            break;
+        case '1':
+            keyDown.style.backgroundColor = 'blue';
+            break;
+        case '2':
+            keyDown.style.backgroundColor = 'green';
+            break;
+        default:
+            keyDown.style.backgroundColor = 'brown';
+
+    }
+}
+
+addEventListener('keydown', detectarTecla);
+
+/* -------------------- Debug -------------------- */
+
+const showError = (e) => {
+    console.log('Error', e.error);
+    console.log('Mensaje', e.message);
+    console.log('Linea', e.lineno);
+    console.log('Columna', e.colno);
+    console.log('URL', e.filename);
+};
+
+addEventListener('error',showError);
+/* myError(); */
+
+/* --------------- Excepciones */
+
+const productOutput = (cantidad, existencia) => {
+    if (cantidad > existencia) {
+        const error = {
+            name: 'Error de Existencia',
+            message: 'La cantidad solicitada excede la existencia'
+        }
+        throw error;
+    } else {
+        existencia -= cantidad;
+        return existencia;
+    }
+}
+
+try {
+    const existenciaTotal = productOutput(15,10);
+    console.log(existenciaTotal);
+}
+catch (error) {
+    console.log(error.message);
+}
